@@ -4,6 +4,14 @@ You know some Scala. You want to try a library. But first you need to figure out
 
 scaladex-cli fixes that. Search for a library, pick it from a list, and the dependency string lands in your clipboard (or straight into your file). No browser, no copy-pasting from Maven Central.
 
+## Install
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/ghstrider/scaladex-cli/main/install.sh | sh
+```
+
+Works on macOS (Intel & Apple Silicon) and Linux x86_64. This downloads the latest native binary to `/usr/local/bin`.
+
 ## Quick start
 
 **Search for a library and copy the dep to clipboard:**
