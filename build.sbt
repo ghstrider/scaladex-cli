@@ -17,5 +17,5 @@ testFrameworks += new TestFramework("munit.Framework")
 nativeConfig ~= {
   _.withLTO(scala.scalanative.build.LTO.none)
     .withMode(scala.scalanative.build.Mode.releaseFast)
-    .withGC(scala.scalanative.build.GC.commix)
+    .withGC(scala.scalanative.build.GC.immix)
 }
