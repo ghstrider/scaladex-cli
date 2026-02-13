@@ -10,12 +10,11 @@ permissions:
 jobs:
   build:
     strategy:
+      fail-fast: false
       matrix:
         include:
           - os: ubuntu-latest
             artifact: scaladex-cli-linux-x86_64
-          - os: macos-13
-            artifact: scaladex-cli-macos-x86_64
           - os: macos-14
             artifact: scaladex-cli-macos-arm64
     runs-on: ${{ matrix.os }}
@@ -36,7 +35,7 @@ jobs:
         run: sbt nativeLink
       - name: Prepare artifact
         run: |
-          cp target/scala-3.3.4/scaladex-cli-out ${{ matrix.artifact }}
+          cp target/scala-3.3.4/scaladex-cli ${{ matrix.artifact }}
           chmod +x ${{ matrix.artifact }}
       - uses: actions/upload-artifact@v4
         with:

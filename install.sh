@@ -17,11 +17,7 @@ case "$OS" in
     esac
     ;;
   Darwin)
-    case "$ARCH" in
-      x86_64) ARTIFACT="scaladex-cli-macos-x86_64" ;;
-      arm64)  ARTIFACT="scaladex-cli-macos-arm64" ;;
-      *) echo "Unsupported architecture: $ARCH"; exit 1 ;;
-    esac
+    ARTIFACT="scaladex-cli-macos-arm64"
     ;;
   *)
     echo "Unsupported OS: $OS"

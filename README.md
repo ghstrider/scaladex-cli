@@ -10,7 +10,7 @@ scaladex-cli fixes that. Search for a library, pick it from a list, and the depe
 curl -fsSL https://raw.githubusercontent.com/ghstrider/scaladex-cli/main/install.sh | sh
 ```
 
-Works on macOS (Intel & Apple Silicon) and Linux x86_64. This downloads the latest native binary to `/usr/local/bin`.
+Works on macOS (Apple Silicon) and Linux x86_64. This downloads the latest native binary to `/usr/local/bin`.
 
 ## Quick start
 
