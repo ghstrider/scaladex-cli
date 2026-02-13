@@ -14,3 +14,10 @@ case class ProjectDetails(
     groupId: String,
     version: String
 ) derives ReadWriter
+
+case class GitHubRelease(
+    tag_name: String,
+    name: String,
+    published_at: String,
+    body: String
+) derives ReadWriter
