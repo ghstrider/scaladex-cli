@@ -16,6 +16,7 @@ jobs:
           distribution: temurin
           java-version: 17
           cache: sbt
+      - uses: sbt/setup-sbt@v1
       - name: Install Scala Native dependencies
         run: sudo apt-get update && sudo apt-get install -y clang libstdc++-12-dev libgc-dev
       - name: Run tests
