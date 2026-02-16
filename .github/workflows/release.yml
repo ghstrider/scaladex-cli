@@ -15,6 +15,8 @@ jobs:
         include:
           - os: ubuntu-latest
             artifact: scaladex-cli-linux-x86_64
+          - os: macos-13
+            artifact: scaladex-cli-macos-x86_64
           - os: macos-14
             artifact: scaladex-cli-macos-arm64
     runs-on: ${{ matrix.os }}
