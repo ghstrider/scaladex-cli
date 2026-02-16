@@ -6,11 +6,20 @@ scaladex-cli fixes that. Search for a library, pick it from a list, and the depe
 
 ## Install
 
+### Homebrew (recommended)
+
+```bash
+brew tap ghstrider/tap
+brew install scaladex-cli
+```
+
+### Shell script
+
 ```bash
 curl -fsSL https://raw.githubusercontent.com/ghstrider/scaladex-cli/main/install.sh | sh
 ```
 
-Works on macOS (Apple Silicon) and Linux x86_64. This downloads the latest native binary to `/usr/local/bin`.
+Works on macOS (Apple Silicon, Intel) and Linux x86_64.
 
 ## Quick start
 
